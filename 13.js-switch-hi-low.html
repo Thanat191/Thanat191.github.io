@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- นายธนัช แทนทด -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>13.js-switch-hi-low.html</title>
+</head>
+<body>
+    <br><br>
+    Input Number : <input type="text" name="" id="num1">
+    <br><br>
+    <button onclick="hi_low()">submit</button>
+    <br><br>
+    <p id="output"></p>
+
+    <script>
+        function hi_low() {
+        switch (+document.getElementById('num1').value) {
+            case 1: case 2: case 3: case 4: case 5:
+            document.getElementById('output').innerHTML= 'Low'
+            break;
+
+            case 6: case 7: case 8: case 9:
+            document.getElementById('output').innerHTML= 'Hight'
+            break;
+            
+            default:
+            document.getElementById('output').innerHTML= 'Error [Please Enter 1-9]'
+            break;
+        }
+    }
+    </script>
+</body>
+</html>
